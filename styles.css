@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap'); 
+
+
+  *, 
+  *:after,
+  *:before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+  }
+  
+  :root{
+
+      /* Colors */
+      /* Primary */
+        --Darkcyan: hsl(158, 36%, 37%);
+        --Cream: hsl(30, 38%, 92%);
+        /* Neutral */
+        --Verydarkblue: hsl(212, 21%, 14%);
+        --Darkgrayishblue: hsl(228, 12%, 48%);
+        --White: hsl(0, 0%, 100%);
+  }
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: var(--Cream);
+}
+
+.card {
+    width: 375px;
+    height: 617px;
+    margin: 4rem auto;
+    background-color: var(--White);
+    box-shadow: 2px 1px 1px var(--Darkgrayishblue);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    
+    
+  }
+
+.card-title__photo{ 
+    width: 100%;
+    
+  }
+
+  .card-title__perfume{
+    margin: 1.5rem 2rem 1.5rem 2rem;
+    color: var(--Darkgrayishblue);
+    letter-spacing: 7px;
+  }
+.card-title__name{
+        margin: -1rem 2rem 1rem 2rem;
+        font-size: 2.1rem;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        color: var(--Verydarkblue);
+}
+
+  .card-description__text{
+    margin: 0rem 2rem 1.5rem 2rem;
+    color: var(--Darkgrayishblue);
+    line-height: 1.5em;
+    font-weight: 500;
+    
+  } 
+
+.card-title__price{
+    display: flex;
+    font-family: 'Fraunces', serif;
+    margin: -1rem 2rem 1.5rem 2rem;
+    color: var(--Darkcyan);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.card-title__price p{
+    
+    margin: 1em 1em;
+    color: var(--Darkgrayishblue);
+    text-decoration: line-through;
+    font-size:small;
+}
+
+.shop{
+    width: 298px;
+    height: 55px;
+    margin:-1rem 1rem -1rem 2.5rem;
+    background-color: var(--Darkcyan);
+    color: var(--White);
+    border-radius: 0.5rem ;
+    border: none;
+    font-size: 1em;
+    font-weight: 700;
+    
+}
+
+.shop:hover{
+    cursor: pointer;
+    background-color: hsl(228, 45%, 44%);
+    color:var(--Darkgrayishblue);
+}
+
+.shop-img{
+    margin-right: 1em;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+
+
+ @media (min-width: 650px){
+    .card{
+        width: 600px;
+        height: 450px;
+        display: flex;
+        margin: 4rem auto;
+    } 
+} 
+
+
+
+.card-title__photo{
+    content: url(./images/image-product-desktop.jpg);
+    width: 300px;
+    height: 450px;
+ }
+
+ 
+    
+   
+   .card-description__text{
+    margin: 32px 24px 16px 24px;
+    line-height: 1.5em; 
+    margin-bottom: 1.5rem;
+    
+ }
+ .card-title__price{
+    margin-bottom: 1.5rem;
+ } 
+
+    .shop { 
+    width: 235px;
+    margin:-1rem 2rem -1rem 2rem;
+    
+    }
